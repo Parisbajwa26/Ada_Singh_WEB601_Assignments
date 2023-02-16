@@ -17,7 +17,8 @@ export class ContentListComponent implements OnInit {
       description: "A satirical masterpiece that never been out",
       author: "Micol Ostow",
       imgURL: "https://kbimages1-a.akamaihd.net/56ac0278-9017-4c81-88ab-361ec1a1f637/353/569/90/False/get-out-of-town-riverdale-novel-2.jpg",
-      rating: 8
+      rating: 8,
+      
     },
    {
       id: 1,

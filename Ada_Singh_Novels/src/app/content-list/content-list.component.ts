@@ -42,6 +42,7 @@ export class ContentListComponent implements OnInit {
         author: "Jonathan Swift",
         imgURL: "https://th-thumbnailer.cdn-si-edu.com/0mIDEcvRG_zsK-GQ8xczdi6LgDI=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/3d/b9/3db9e3ec-1013-4341-8d8e-cf7c4aca0552/file-20171123-17988-1vwsyta.png",
         rating: 9,
+        tags:["Travel", "village"],
         type: 'Horror',
   
       },
@@ -52,6 +53,8 @@ export class ContentListComponent implements OnInit {
         author: 'Aoko Matsuda',
         imgURL:'https://api.time.com/wp-content/uploads/2020/11/best-books-2020-Where-the-Wild-Ladies-Are.jpg?w=800&quality=85',
         rating: 8,
+        tags:["Japaness", "Wild"],
+
         type: 'Horror',
   
       },
@@ -87,6 +90,8 @@ export class ContentListComponent implements OnInit {
         imgURL:
           'https://api.time.com/wp-content/uploads/2020/11/best-books-2020-Deacon-King-Kong.jpg?w=800&quality=85',
         rating: 8,
+        tags:["Church", "King"],
+
      
       },
     ];

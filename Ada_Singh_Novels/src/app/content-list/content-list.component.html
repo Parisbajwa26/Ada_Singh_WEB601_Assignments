@@ -52,6 +52,11 @@
             <p class="card-text" *ngIf="myFavNovel?.type"  appHoverAffect="underline">
               <strong>Type</strong> {{ myFavNovel?.type }}
             </p>
+            <p class="card-text" *ngIf="myFavNovel?.tags"  >
+              <strong>Tags</strong> 
+              <span *ngFor="let tag of myFavNovel?.tags" appHoverAffect="bold"> {{tag}},
+              </span>
+            </p>
           </div>
         </div>
     </div>
@@ -96,6 +101,11 @@
             </p>
             <p class="card-text" *ngIf="myFavNovel?.type"  appHoverAffect="underline">
               <strong>Type</strong> {{ myFavNovel?.type }}
+            </p>
+            <p class="card-text" *ngIf="myFavNovel?.tags"  >
+              <strong>Tags</strong> 
+              <span *ngFor="let tag of myFavNovel?.tags" appHoverAffect="bold"> {{tag}},
+              </span>
             </p>
           </div>
         </div>
@@ -143,6 +153,11 @@
             </p>
             <p class="card-text" *ngIf="myFavNovel?.type"  appHoverAffect="underline">
               <strong>Type</strong> {{ myFavNovel?.type }}
+            </p>
+            <p class="card-text" *ngIf="myFavNovel?.tags"  >
+              <strong>Tags</strong> 
+              <span *ngFor="let tag of myFavNovel?.tags" appHoverAffect="bold"> {{tag}},
+              </span>
             </p>
           </div>
         </div>

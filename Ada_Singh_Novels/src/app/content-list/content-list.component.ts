@@ -10,6 +10,7 @@ export class ContentListComponent implements OnInit {
   public myFavNovels: Content[] = [];
   public inputValue: String = '';
   public Search: boolean | null = null;
+  defaultnovel: string = "https://images.pexels.com/photos/1005324/literature-book-open-pages-1005324.jpeg?cs=srgb&dl=antique-book-book-bindings-1005324.jpg&fm=jpg";
 
   constructor() {
     this.myFavNovels = [
@@ -18,7 +19,7 @@ export class ContentListComponent implements OnInit {
         title: "RiverDale",
         description: "A satirical masterpiece that never been out",
         author: "Micol Ostow",
-        imgURL: "https://kbimages1-a.akamaihd.net/56ac0278-9017-4c81-88ab-361ec1a1f637/353/569/90/False/get-out-of-town-riverdale-novel-2.jpg",
+        
         rating: 8,
         type: 'classic',
   

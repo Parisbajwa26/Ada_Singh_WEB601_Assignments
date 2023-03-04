@@ -1,3 +1,9 @@
+.card{
+  border: 1px solid black;
+  margin: 12px 0px;
+
+  text-align: center;
+}
 .card-title,
 .card-text {
   padding-left: 26px !important;
@@ -18,4 +24,19 @@
 
 .error-txt {
   color: red;
+}
+
+.no-type{
+  color: black;
+  background-color: antiquewhite;
+}
+
+.classic-type{
+  color:black;
+  background-color: rgb(218, 148, 10); ;
+}
+
+.horror-type{
+  color:white;
+  background-color: black;
 }

@@ -5,29 +5,16 @@ import { Content } from './helper-files/content-interface';
   name: 'filterContentType',
 })
 export class FilterContentTypePipe implements PipeTransform {
-  transform(contentItem: Content[], filter?: String): any {
-    var content: Content[] = [];
-    if (contentItem.length == 0 || !filter) {
-      return contentItem.reduce((prevContent, currentContent) => {
-        if (currentContent.price) {
-          prevContent.push(currentContent);
-        }
-        return prevContent;
-      }, content);
+  transform(contents: Content[], type?: string): Content[] {
+    if(!contents){
+      return [];
     }
 
-    return contentItem.reduce((prevContent, currentContent) => {
-      if (
-        typeof currentContent.title == filter?.toLowerCase() ||
-        typeof currentContent.filteredRow == filter?.toLowerCase() ||
-        typeof currentContent.id == filter?.toLowerCase() ||
-        typeof currentContent?.null == filter?.toLowerCase() ||
-        typeof currentContent.undefined == filter?.toLowerCase() ||
-        typeof currentContent.price == filter?.toLowerCase()
-      ) {
-        prevContent.push(currentContent);
-      }
-      return prevContent;
-    }, content);
+    if (!type){
+      return contents.filter(content => !content.type);
+    }
+
+    return contents.filter(content => content.type === type);
   }
+
 }

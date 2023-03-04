@@ -10,6 +10,7 @@ export class ContentListComponent implements OnInit {
   public myFavNovels: Content[] = [];
   public inputValue: String = '';
   public Search: boolean | null = null;
+  errTxt: boolean = false;
   defaultnovel: string = "https://images.pexels.com/photos/1005324/literature-book-open-pages-1005324.jpeg?cs=srgb&dl=antique-book-book-bindings-1005324.jpg&fm=jpg";
 
   constructor() {
@@ -101,6 +102,23 @@ export class ContentListComponent implements OnInit {
 
   SearchbyTitle(){
     this.Search = this.myFavNovels.some(novel => novel.title === this.inputValue);
+  }
+
+  addNovel(newNovel: Content){
+    const addPromise = new Promise ((resolve, reject
+    ) => {
+      this.myFavNovels.push(newNovel);
+      this.myFavNovels = [ ...this.myFavNovels];
+      resolve(newNovel.title);
+    });
+
+    addPromise.then(
+      data => {
+        console.log(`Content Added succuessfully with title: ${data}`);
+        this.errTxt = false;
+      }).catch(err => {
+        this.errTxt =true;
+      });
   }
 
 

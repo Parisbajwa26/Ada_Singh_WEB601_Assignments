@@ -1,4 +1,7 @@
-  <main>
+ <app-create-content (onCreation)="addNovel($event)"></app-create-content>
+ <p class="errTxt" *ngIf="errTxt">Content Addition failed</p>
+ 
+ <main>
       <div class="SearchbyTitle">
         <input type="text" [(ngModel)]="inputValue" placeholder=" Search Title Here" >
         <button

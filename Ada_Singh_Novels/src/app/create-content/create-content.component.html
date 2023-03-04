@@ -1,0 +1,13 @@
+<div>
+    ID: <br><input type="number" [(ngModel)]="newNovel.id"><br><br>
+    Title: <br><input type="text"  [(ngModel)]="newNovel.title"><br><br>
+    Description: <br><input type="text"  [(ngModel)]="newNovel.description"><br><br>
+    Author: <br><input type="text"  [(ngModel)]="newNovel.author"><br><br>
+    Image Link: <br><input type="text"  [(ngModel)]="newNovel.imgURL"> <br><br>
+    Rating: <br><input type="number"  [(ngModel)]="newNovel.rating"> <br><br>
+    Type: <br><input type="text" [(ngModel)]="newNovel.type"> <br><br>
+    
+    <div>
+        <button (click)="addNovel()">Add Novel</button>
+    </div>
+</div>

@@ -8,9 +8,10 @@ import { ContentCardComponent } from './content-card/content-card.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { FilterContentTypePipe } from './filter-content-type.pipe';
 import { HoverAffectDirective } from './hover-affect.directive';
+import { CreateContentComponent } from './create-content/create-content.component';
 
 @NgModule({
-  declarations: [AppComponent, ContentCardComponent, ContentListComponent, FilterContentTypePipe, HoverAffectDirective],
+  declarations: [AppComponent, ContentCardComponent, ContentListComponent, FilterContentTypePipe, HoverAffectDirective, CreateContentComponent],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],

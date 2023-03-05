@@ -7,5 +7,6 @@ export interface Content{
     imgURL?: string;
     rating?: number;
     tags?: string[];
+    type?: string;
 
   }

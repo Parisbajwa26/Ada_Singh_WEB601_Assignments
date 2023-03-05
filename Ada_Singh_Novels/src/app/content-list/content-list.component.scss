@@ -1,3 +1,9 @@
+.card{
+  border: 1px solid black;
+  margin: 12px 0px;
+
+  text-align: center;
+}
 .card-title,
 .card-text {
   padding-left: 26px !important;
@@ -5,4 +11,51 @@
 
 .border__card {
   border: 2px solid black !important;
+}
+
+.result__found_border {
+  transition: 0.3s ease-in-out;
+  border: 8px solid greenyellow !important;
+  box-shadow: 0px 12px 24px rgba(172, 255, 47, 0.301);
+}
+.success-txt {
+  color: green;
+}
+
+.error-txt {
+  color: red;
+}
+
+.no-type{
+  color: black;
+  background-color: antiquewhite;
+}
+
+.classic-type{
+  color:black;
+  background-color: rgb(218, 148, 10); ;
+}
+
+.horror-type{
+  color:white;
+  background-color: black;
+}
+
+.SearchbyTitle button{
+  color:white;
+  background-color:rgb(66, 5, 10);
+  border-radius: 0px;
+  padding: 8px;
+  
+}
+
+.SearchbyTitle {
+ text-align:center;
+  
+}
+
+.SearchbyTitle input{
+  width:500px;
+  padding: 8px;
+  
 }
